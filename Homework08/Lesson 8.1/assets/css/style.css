@@ -1,0 +1,118 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fdde7e;
+}
+
+.wrapper {
+    display: flex;
+    width: 1140px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bronze {
+    display: flex;
+    flex-direction: column;
+    width: 361px;
+    height: 441px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #4e4e4e;
+    padding-top: 42px;
+    padding-bottom: 36px;
+    border: 1px solid #edd076;
+    border-radius: 2px;
+    justify-content: space-between;
+
+}
+
+.gold {
+    display: flex;
+    flex-direction: column;
+    width: 361px;
+    height: 499px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #4e4e4e;
+    padding-top: 52px;
+    padding-bottom: 56px;
+    border: 1px solid #edd076;
+    border-radius: 2px;
+    justify-content: space-between;
+}
+
+.silver {
+    display: flex;
+    flex-direction: column;
+    width: 361px;
+    height: 441px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #4e4e4e;
+    padding-top: 42px;
+    padding-bottom: 36px;
+    border: 1px solid #edd076;
+    border-radius: 2px;
+    justify-content: space-between;
+}
+
+.price {
+    width: 50px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Miso'sans-serif;
+    font-weight: bold;
+    color: #02995b;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 134px;
+    height: 135px;
+    background-image: url('../img/cups.png');
+    background-repeat: no-repeat;
+}
+
+.icon.icon_1 {
+    background-position: -1px 0px;
+}
+
+.icon.icon_2 {
+    background-position: -391px 0px;
+}
+
+.icon.icon_3 {
+    background-position: -779px 0px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+}

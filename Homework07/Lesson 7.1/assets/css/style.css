@@ -1,0 +1,140 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    height: 976px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.logo h6 {
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #898f99;
+    padding-top: 143px;
+    padding-bottom: 36px;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+}
+
+.logo h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #0ec8cb;
+    padding-bottom: 45px;
+    letter-spacing: 0.1em;
+}
+
+.logo p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #adadad;
+    padding-bottom: 108px;
+}
+
+.wrap {
+    width: 940px;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.item {
+    display: block;
+    width: 25%;
+    height: 420px;
+    float: left;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    padding: 56px 30px 36px;
+}
+
+.item:hover {
+    background-color: #0ec8cb;
+    transition: all .2s ease;
+    color: #fff;
+}
+
+.icon {
+    display: inline-block;
+    background-image: url('../img/sprite01.png');
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.icon.icon_1 {
+    background-position: 8px 6px;
+}
+
+.icon.icon_2 {
+    background-position: -136px 6px;
+}
+
+.icon.icon_3 {
+    background-position: -272px 6px;
+}
+
+.icon.icon_4 {
+    background-position: -407px 6px;
+}
+
+.item:hover .icon {
+    display: inline-block;
+    background-image: url('../img/sprite01.png');
+    background-repeat: no-repeat;
+    transition: all .2s ease;
+}
+
+.item:hover .icon.icon_1 {
+    background-position: 8px -74px;
+    transition: all .2s ease;
+}
+
+.item:hover .icon.icon_2 {
+    background-position: -136px -74px;
+    transition: all .2s ease;
+}
+
+.item:hover .icon.icon_3 {
+    background-position: -271px -74px;
+    transition: all .2s ease;
+}
+
+.item:hover .icon.icon_4 {
+    background-position: -406px -74px;
+    transition: all .2s ease;
+}
+
+.item h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.item p {
+    font-size: 12px;
+    font-family: 'PTsans'sans-serif;
+    color: #777777;
+}
+
+.item:hover p {
+    color: #fff;
+    transition: all .2s ease;
+}
