@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kjwmif');
-  src:  url('fonts/icomoon.eot?kjwmif#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kjwmif') format('truetype'),
-    url('fonts/icomoon.woff?kjwmif') format('woff'),
-    url('fonts/icomoon.svg?kjwmif#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?tz04ym');
+  src:  url('fonts/icomoon.eot?tz04ym#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tz04ym') format('truetype'),
+    url('fonts/icomoon.woff?tz04ym') format('woff'),
+    url('fonts/icomoon.svg?tz04ym#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,18 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-clock-o:before {
+  content: "\f017";
+}
+.icon-inbox:before {
+  content: "\f01c";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-phone:before {
+  content: "\f095";
+}
 .icon-facebook:before {
   content: "\ea90";
 }
+.icon-instagram:before {
+  content: "\ea92";
+}
 .icon-twitter:before {
   content: "\ea96";
-}
-.icon-youtube:before {
-  content: "\ea9d";
-}
-.icon-linkedin2:before {
-  content: "\eaca";
-}
-.icon-pinterest2:before {
-  content: "\ead2";
 }
