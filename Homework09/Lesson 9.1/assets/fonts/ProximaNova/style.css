@@ -1,0 +1,11 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "ProximaNova-Regular";
+
+  src: url("ProximaNovaRegular.woff") format("woff"),
+    /* Modern Browsers */
+    url("ProximaNovaRegular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
