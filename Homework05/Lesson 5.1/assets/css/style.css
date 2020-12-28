@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+    background-color: #121116;
+    text-align: center;
+}
+
+.logo {
+    padding-top: 120px;
+    padding-bottom: 51px;
+}
+
+.social_part p {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 21px;
+}
+
+.separator {
+    border: 1px solid #fff;
+    margin-left: 460px;
+    margin-right: 460px;
+    margin-bottom: 21px;
+}
+
+.icon li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 86px;
+}
+
+.icon li a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.copyright p {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    padding-bottom: 38px;
+}
+
+.copyright .colortext {
+    color: #19c8fa;
+}
