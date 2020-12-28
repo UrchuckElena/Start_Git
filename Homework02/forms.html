@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <form method="post" action="#">
+        <fieldset id="personalInfo">
+            <legend>
+                <h2>Личная информация:</h2>
+            </legend>
+            <label for="login"><b>Логин</b></label>
+            <input type="text" name="login_field" id="login" placeholder="логин">
+            <br>
+            <label for="password"><b>Пароль</b></label>
+            <input type="password" name="password_field" id="password" placeholder="пароль">
+            <input type="button" name="btn" value="вход">
+            <br>
+            <label for="email"><b>E-mail</b></label>
+            <input type="email" name="email_field" id="email" placeholder="e-mail">
+            <input type="button" name="btn" value="вход">
+            <br>
+            <label for="tel"><b>Контактный тел.</b></label>
+            <input type="tel" name="tel_field" id="tel" placeholder="+38(XXX)XXX XX XX">
+            <br>
+            <label for="birth"><b>Дата рождения</b></label>
+            <input type="date" name="date_field" id="birth">
+            <br>
+            <label for="age"><b>Возраст</b></label>
+            <input type="number" name="number_field" id="age">
+            <br>
+            <input type="button" name="btn" value="отправить">
+        </fieldset>
+        <fieldset id="anotherInfo">
+            <legend>
+                <h2>Другая информация:</h2>
+            </legend>
+            <label for="favCol"><b>Любимый цвет</b></label>
+            <input type="color" name="shade_color" id="favCol">
+            <br>
+            <label for="number"><b>Число от 1 до 10</b></label>
+            <input type="range" min="1" max="10" id="number">
+            <br>
+            <label for="date_time"><b>Дата и время встречи</b></label>
+            <input type="datetime-local" name="datetime" id="date_time">
+            <br>
+            <label for="arrival"><b>Время прибытия</b></label>
+            <input type="time" name="time_set" id="arrival">
+            <br>
+            <label for="send_image"><b>Отправить картинку</b></label>
+            <input type="file" name="select" id="send_image">
+            <br>
+            <h4><b>Ввод текста</b></h4>
+            <textarea name="review_text" id="text" placeholder="content_text">какой-то текст</textarea>
+            <br>
+            <input type="button" name="btn" value="отправить">
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Предпочтения:</h3>
+            </legend>
+            <label><b>Ваш любимый фрукт</b></label>
+            <ul>
+                <li><input type="checkbox" id="fruit1" name="fruit1" value="персик"><label for="fruit1">Персик</label>
+                </li>
+                <li><input type="checkbox" id="fruit2" name="fruit2" value="яблоко"><label for="fruit2">Яблоко</label>
+                </li>
+                <li><input type="checkbox" id="fruit3" name="fruit3" value="банан"><label for="fruit3">Банан</label>
+                </li>
+                <li><input type="checkbox" id="fruit4" name="fruit4" value="апельсин"><label
+                        for="fruit4">Апельсин</label>
+                </li>
+                <li><input type="checkbox" id="fruit5" name="fruit5" value="Груша"><label for="fruit5">Груша</label>
+                </li>
+                <li><input type="checkbox" id="fruit6" name="fruit6" value="слива"><label for="fruit6">Слива</label>
+                </li>
+            </ul>
+            <label for="fav_fruit"><b>Любимый фрукт</b></label>
+            <select name="favorite_fruit" id="fav_fruit">
+                <option value="catalog of goods">Любимый фрукт</option>
+                <option value="dairy">персик</option>
+                <option value="bakery">яблоко</option>
+                <option value="meat">банан</option>
+                <option value="alcohol">апельсин</option>
+                <option value="grocery">груша</option>
+                <option value="confection">слива</option>
+            </select>
+            <br>
+            <label><b>What do you prefer?</b></label>
+            <ul>
+                <li><input type="radio" name="fruit" value="apple" id="apple" checked><label for="apple">Apple</label>
+                </li>
+                <li><input type="radio" name="fruit" value="peach" id="peach"><label for="peach">Peach</label></li>
+                <li><input type="radio" name="fruit" value="banana" id="banana"><label for="banana">Banana</label></li>
+                <li><input type="radio" name="fruit" value="orange" id="orange"><label for="orange">Orange</label></li>
+                <li><input type="radio" name="fruit" value="pear" id="pear"><label for="pear">Pear</label></li>
+                <li><input type="radio" name="fruit" value="plum" id="plum"><label for="plum">Plum</label></li>
+            </ul>
+            <input type="button" name="btn" value="отправить">
+        </fieldset>
+    </form>
+</body>
+
+</html>
