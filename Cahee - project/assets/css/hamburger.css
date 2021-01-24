@@ -1,0 +1,109 @@
+.header__hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.header__hamburger:hover {
+    opacity: 0.7;
+}
+
+.header__hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.header__hamburger.is-active .header__hamburger-inner,
+.header__hamburger.is-active .header__hamburger-inner::before,
+.header__hamburger.is-active .header__hamburger-inner::after {
+    background-color: #000;
+}
+
+.header__hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.header__hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.header__hamburger-inner,
+.header__hamburger-inner::before,
+.header__hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.header__hamburger-inner::before,
+.header__hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.header__hamburger-inner::before {
+    top: -10px;
+}
+
+.header__hamburger-inner::after {
+    bottom: -10px;
+}
+
+.header__hamburger-inner {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header__hamburger--vortex .header__hamburger-inner::before,
+.header__hamburger--vortex .header__hamburger-inner::after {
+    transition-duration: 0s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+}
+
+.header__hamburger--vortex .header__hamburger-inner::before {
+    transition-property: top, opacity;
+}
+
+.header__hamburger--vortex .header__hamburger-inner::after {
+    transition-property: bottom, transform;
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner {
+    transform: rotate(765deg);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner::before,
+.header__hamburger--vortex.is-active .header__hamburger-inner::after {
+    transition-delay: 0s;
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(90deg);
+}
