@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /js/
 
-http://127.0.0.1:5501/index.html
+https://urchuckelena.github.io/Start_Git/Cahee%20-%20project/index.html
