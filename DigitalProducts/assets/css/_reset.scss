@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+button,
+input[type=button],
+input[type=submit] {
+    transition: all .2s ease;
+}

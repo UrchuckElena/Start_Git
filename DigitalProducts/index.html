@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/plugins/lightgallery/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/plugins/lightslider/dist/css/lightslider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="assets/fonts/style.min.css">
+    <link rel="stylesheet" href="assets/icon/style.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-toast.min.css">
+    <link rel="stylesheet" href="assets/css/hamburger.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Digital products</title>
+</head>
+
+<body class="body">
+    <div class="mobile-menu" id="mobile_menu">
+        <nav class="mobile">
+            <ul class="mobile__list">
+                <li class="mobile__list-item">
+                    <a class="mobile__link active" href="#home">Home</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="#about">About</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="#services">Services</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="#works">Works</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-shadow"></div>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo logo">
+                <a class="logo__link" href="#" target="_blank"><img class="header__logo" src="assets/img/logo.png" alt="pic">
+                </a>
+            </div>
+
+            <div class="header__main-menu" id="main_menu">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__link active" href="#home">Home</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="#about">About</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="#services">Services</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="#works">Works</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button class="header__hamburger header__hamburger--vortex" type="button" id="hamburger">
+                    <span class="header__hamburger-box">
+                    <span class="header__hamburger-inner"></span>
+                    </span>
+                </button>
+        </div>
+    </header>
+
+    <section class="firstScreen" id="home">
+        <div class="container">
+            <div class="firstScreen__inner">
+                <h1 class="firstScreen__title">Creative digital project</h1>
+                <p class="firstScreen__description">Duis mollis, est non commodo luctus,<br>nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutUs" id="about">
+        <div class="container">
+            <div class="aboutUs__inner">
+                <div class="aboutUs__image">
+                    <img class="aboutUs__img lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/aboutus.jpg" alt="pic">
+                    <svg class="aboutUs__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="54" viewBox="0 0 50 54">
+                        <image id="Icon-AboutUs" width="50" height="54" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAA2CAYAAACFrsqnAAADR0lEQVRoge1ai23bMBA9Bx1A3UAbRBtUnSDaoBrB3cCdwM0EGsHpBHYnUDqBsoG8AQsWd8GFES3e8SQ7QB9ACJDFz7s7ko9Hb5xzsAAaAKgA4B4ACmz+GQD+AMAJAF7Mu/REjErhnNs550Y3j4NzrjbsG6w84j3QMet7iz+hB17wvffQAz4JPwHgBwCcs0dgYI09s3+fYOnSOdcFdYrcceSS4APaC+s2LAyzyeSQaBmJVtlGxcgcr0GkZAPYZXqVk9muTeRoYUVWttjeqA0xTac1C6lSUG8u/Mg40rmmJkITvBPUKRPmEhlI5RUpiULpDbL2MDPIQbt43Am3nRqfz4kyw2+EB1avBID9he8f8flFOC4xEdqVTwnftgDQ467vd+7v7H0XqUPt1pHf4xC6kELkgMtm+HuFK9DAQnBg3/K95xAJT8Kic6SfkIN95P2Ie0w4J9qJ+kdWCCJRKSVC6CIqd0RLtzOTusLvLkFERKp+6eMNe0fxnDJvQhSBGgZcDPy7r5I2Pyk6BxwASW8NAcJ5or5K0ktXLeo0tKIlyjWIEFSdCdsWeVpK5Dc+74X1UkHzTXym14ZWYzLs93gI+kmGhsgZ3S/ffedBBvq1NBHApILHt4wBT8FLlxIN9SSuLZUCTJI745QOyRrViVPbKZ1JeiMSO6YMVjshAnZGEkVywJoqDfNwo23HagBaMrWVQXJDIpTlkrDYsrrZSYxcIiGZmHQPPcnlemeRabTK/VZ4GuQ4MSUAqAZqlh8mbMACBh6hwg9KlzCyVcpZ9W95P8LPKrTzc3F5xqTFaeL7bCxFZInvL0Ir428OVkRyBKSJks4hQsm2AQCOGe0csA3flv7AJlwdCtw3wpVpxP1gKtcVKxUmrMNsTJ+QhVFviE1wO8V3c7U+CtqfSg91qe2nWGwIGu9RXmTvxhGPbyc8PuBYoonzqZex0NkLQye3XAq9d14KrRG6N9m1C5ep0HsjUjkJ7oU54XetUgTy5vU2mAZEd+XjyuGjLfwCdU9EljqDL13e3GVyb1jd0K5ZXu8z71ge93Fm77xFUP6r9uqXVOhnkz+3rI9/4+dEbE5qVyLyX8bfGviNVY4Uvzr4HPnwHvGXjh8bAPAXSR6feUupaOwAAAAASUVORK5CYII="/>
+                      </svg>
+                    <h3 class="aboutUs__title">About us</h3>
+                </div>
+                <div class="aboutUs__content">
+                    <div class="aboutUs__text">
+                        <p class="aboutUs__paragraph1">Nullam quis risus eget urna <b>mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        <p class="aboutUs__paragraph2"><b>Morbi leo risus</b>, porta ac consectetur ac, vestibulum at eros. Vivamus sagit-tis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Mae- cenas
+                            faucibus mollis interdum. Cras mattis consectetur purus sit amet <i>fermentum</i>. Sed posuere consectetur est at lobortis.</p>
+                    </div>
+                    <div class="aboutUs__button">
+                        <a class="aboutUs__btn btn__link" href="#" target="_blank">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services__inner">
+
+                <div class="services__item item1 lazy" data-bg="assets/img/services.jpg">
+                    <svg class="item1__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="60" viewBox="0 0 62 60">
+                        <image id="Icon-Services" width="62" height="60" xlink:href="data:img/png;base64,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"/>
+                      </svg>
+                    <h3 class="services__text">Our Services</h3>
+                    <p class="services__quote">“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”</p>
+                    <p class="services__author"> - Borat -</p>
+                </div>
+
+                <div class="services__item item2">
+                    <svg class="item2__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="61" viewBox="0 0 47 61">
+                        <image id="Icon-Graphic" width="47" height="61" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA9CAYAAAA9OTA8AAAFXUlEQVRoge2aeWwVVRTGf0AVBURFUVHBalziQnDDrYpp3eqGyzP+A1o0BgSjMYLGDRMMFESNCyY1bhQbjXGJG0ow0SLBGAOKWregouISqUbjQpCWijkv3zQ305l5d17fs2+SfslL+97cufPNueee851774CpDVPoBW4A6oHtgW0e3Vi7j4A7gF8jrg8CrgP+BV4Evk/qt6o3zIErgCNS3nMS8FAM+fOBW4CRwP1AM3An8E1UR70lH+BKYB2wXUKb34BXgP0S2rzkkDeYW5yt0f0w3LhU5FcDn3i02+TR5lXgKOAt4FBgDLAcOAP42G04sHi+ZcMfwACgHTgMeBfYA7gP2LPSyU+WR6zSSF0GbADqgHFuw1K5TRhRUaijgL8bbgfGAlvlNoavgWeBWcB04INgspeL/MVATcp7zLLXADsCU2XtAM9o8o7T9TzKRT4HHBiyfFK02QFYCOwFPAm8oJEK0Ab8CRwADC03+Y36hBEXbWbJXdYDs/WiLjpCL9NN3mbxaOBe4D1lt1JhJnCWRmBLgs/XqM3DwC8xbQZFkb9e/9tQL1FGW18i8tbniR7txuivRZjNEdePAXbWiPwT/Gih8lunUYNm9xxgp95zz0/ck50w911Muzb9PRcYFnF9mmL9SuDvKPKPA+8rTJlw+gK4XJOpWPwMvAO0KjvG+fwy4HfgNuBSYLBzrU6ax9DkaiKXvPnkCdIp5jZ7y41eB0alJG9x/g1ghYi3KsXH+bw9500Zzoz4OdCoqLNUUahZMqQbVRpKI76L/KoF+AF4SqRrgYnA4qgZH4Ni4vwwJ/rtL4EWwATbjRqdbgSWNz86XC6yQG87SjoD3ZjG+jnH12v1SfL5OokxwylSqMhg9vslURK6SuQ3aWjWArvppZYo4y2XFetTWD9tnJ8v0bVQcng40CXX+SruIYHlN+vmkXrohcBVetgjwF/AzUX4vg8swh0isncD42XIpyOSVST5dn1foZj6siYPStefAtWO2ColZmiuzZWUyKlvL/KGR2Xd6hhyTUVaf6YTdaKijanIIxXdHpRx9lHV1BbTZw/yLQWsW6z1c6qATgXOdERVlwqOBvW1QFaepDavOcGiIHk8rFuM9eMyrBFbJOW5VqGw2inmW9xM6kO+kHXD1/FY7ojLsMdJsBlulRibpMT4to/Vw+RJaf3BzqROi5ukzS0wrNG9E6UcmxKUZSL5tNaPElE+qNGzG5V8apVVu6Svunw6CRcj1zoWn6Pit0OTC1k6kK+LnGr+CY1IUkEfrmEttzwg395XydHS/zzxaE/oK4/wcl9bEStg5YBJlc8K9RtXBvqsgJUaPitqXuR9V8BKDZ8VtYLk+xrNmgsDNTcsIj2m5ZBtlU5+fOh7vaREswqdvK6vVPJTVEsbDgLOA87R76OV0DZW4lolmnOr9FksjTRB5eFpSmS7Vyr5KNgLXaDdkouAo7NE3vCl5LstjE3PGnm0TGKSYkIWya+R6hyRRfIEwi2L5G3ZbwgZJW+V2a5WgWWR/AwtAi/NGvnZ2oTuNKlQqfIgjONVHJ2uUtEy7oZKV5WdKhmHOtdy0v1bs6IqrVB5DrjLPYdQ6arSVih+1P+d4UaVSn61Tw2b1QybRz/5vkI/+b5CP/m+Qph8sC4+NuqgQplhe2EjVJ967feGyS/ThvI8rdz+n5imXcCVPrsiUeTv0UqxrZU/L/lZbtcarqXuyfreGLOH2wNhebBFuxa2dX+stmTWaXumlOdw0JrjEO1VBYcz5uo0n8/p2Eht0yri83UC42B9ygk7YWKnnWzbs4cAS0Pe8JO2Ga92DqV5WSMl7Pm2TWRukm5kgf8ASndPKeTEamkAAAAASUVORK5CYII="/>
+                      </svg>
+                    <h3 class="services__title">GRAPHIC DESIGN</h3>
+                    <p class="services__description">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+
+                <div class="services__item item3">
+                    <svg class="item3__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="59" viewBox="0 0 58 59">
+                        <image id="Icon-Web" width="58" height="59" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAABuklEQVRoge2aO0sDQRRGT4xPrLSx01JQBG0sFKxtRXu1sfZfWFpa+gckrSiooJg+YmVlIQQf+EbwFeXCLIxhN8lKYibXe6rscJm9Z2azs8WXWVlcWgfGgCzxyPgZsAo8J9Q0kzVgEmhL6CEDnIroV41NDgBXAYrK4vdWK2r3fi8A12UrI5PsAP2N6bGuzAKvZRO+AQdApy+aB4oxd35vAUnhCHiJGS9RtqPVyAUoLRLdtRSmEZ3+fT/NJ43oHHDn3mKhIP/JPaCnWj9pRPOBvnVLtRT5oltuhfwd+wD66t9bQ9iOkZbrzkj0HBgCpirc/QH4DFRQ+h8BZirUFEV0AhgFOoAnYNedm/PAjRs/AW7/sPk0yAaNu/Nfzs19oMs7V+UJLYjoPXDsTRwdITJ2GaiczyNw6F1HT96PczXp+1AdJqoNE9WGiWrDRLVhotowUW2YqDZMVBsmqg0T1YaJasNEtWGi2jBRbZioNkxUGyaqjX8jKmGNTWDQSfu5opxLdWRd6nPZpVZCYwMYdukTPxsY5Y5k/MLyut4kltcNDMvrYnndeCyv22Qsr2t53YQi+TJqlbxuHBmg8A0XsmuvFl6tGQAAAABJRU5ErkJggg=="/>
+                      </svg>
+                    <h3 class="services__title">WEB DEVELOPMENT</h3>
+                    <p class="services__description">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+
+                <div class="services__item item4">
+                    <svg class="item4__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="61" viewBox="0 0 50 61">
+                        <image id="Icon-SEO" width="50" height="61" xlink:href="data:img/png;base64,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"/>
+                      </svg>
+                    <h3 class="services__title">Seo & marketing</h3>
+                    <p class="services__description">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+
+                <div class="services__item item5">
+                    <svg class="item5__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="61" viewBox="0 0 36 61">
+                        <image id="Icon-Mobile" width="36" height="61" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA9CAYAAADF2cvLAAACw0lEQVRoge2aXYhNURiGnxnHUAolUkbjxr9IEiXDxaD8lIgoP0NR8lNT7hCFUjIkrhRDceHKhRApaZBLLjQXGvJTJNIYxpgZ9J3erX12ZtasrX22i/XWPrtz2vvbz1rr+75T690V2zfXE9N0YBswDagAfpGdBgDfgNvAZeC9PakQe9wu4DAwTDDl0mJgH7AXuBAB7QEaRX0LOA+8AwZmCPIdGA80ADOAk0CHAR0A1gjmuL7/yBAkrkfAVeAEsAOoN6CVypmbwFmgs0wwkTqAS8ACoK4SmKmceQi8KjNMpMfAPVulQiyB2x1VtUEV2OlZfZaHn4FTwP1errF4H0lUmUuTgFqP65N60AfQH/kANaoCrS30eNxnM/QGeNafi+NArod8Apo9QHzVkwSysqvLuPf0JmszU5NAk3XkqjjQOeAiMDwHIEuH3cD6OFCLOmc5/8ciWdkvJTFDP3XkpWJvq8wR4K8KQC4FIJcCkEsByKUA5FIAcikAuRSAXApALgUglwKQSwHIpQDkUgByKQC59F8Dfc2RA1kMJTtoG7U5ntcubG0SaL6OXBUHugZcB4amGF27Nr4t3hCgyjOGeSHrzMyLA5kX0eRpNxjMRGATMEZuksV44bn03TLzSoC6NEofH2MKcAxYolmxxKwB9qewuuz5JVWWZn96tfaXn8h+egusBRaliEUSqCvF/SNljd6Qd2r20yCgOkWsQvTRrXN1Cmv8tc5bZVHaErbJFfDRYC11cYaa5Z9b0NmegZrkuY8FFgKjgNPyb320AlhmvpoBHdJUW7AzwDyPQB+ALcAcYDkwS652m0cMs06PyvS5U9AMNeiHuRrxU+Al8EU50pei3KtSG1jVj9ZhaTIamKBlHgHcBY4UVOYtGulOveFQ4znl/yIzle0lArPoW5P21EHgioDGaaRZvP9hqWKz2aom+rzYrYHfCimGI2ALfeQAAAAASUVORK5CYII="/>
+                      </svg>
+                    <h3 class="services__title">Mobile development</h3>
+                    <p class="services__description">Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="works lazy" id="works" data-bg="assets/img/works.jpg">
+        <div class="container">
+            <div class="works__inner">
+                <svg class="works__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="60" viewBox="0 0 40 60">
+                    <image id="Icon-Works" width="42" height="61" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA8CAYAAAAUufjgAAADGElEQVRogcVai3HbMAxFOoFGcDdwN/AG9QjeoO4ESSbwCEknyHUCtxOoGzgbKJlAPSaEA0sA8SHl4A7nnCKCT496AEj7ZhxHmFgPAOvpxSvYPwD4Np3mCzPv6hPAJeu4ixzAn/nzBQC+AsDNwv6c57tnYaclZvw4vtuT8P9WvsvznKR40kTr8cM2CwI85Vl2XoDJD9rTVbrKngawG8dxyEHuPoM9DSB9ygR0dW32LABhIcGY2LMCbC0YM3tWgEAE09JU9pJziZqz10Bl0MxWsQxPsSJq3jZcYpPwLAGfcsBjQ5GYhacF2pB3bt0Q4IrELa6KFgjTwaEhOPQ7ouYuAhADDKUAFd4RAsRKVVoCFIYpHQR9S5aaFYwUeAlhSH4szcUNWkoYpdUSBcMN8AojvUt7wgSysXeAFAVTK4zEcF8of71DYCwxNcJIEyO4IY/psu9ILCtI9tWqEYaWx2jDa13uGYYaYSB7Jbax7vYOwVys4nQyT8VAKy1fR+7zCuZNB5Dp9whjCrDVfaxggKQHT1qgQUrF3rvE6OcKkxrWv7k1/O5sOH/lz4NwbJGu3ea/fztjI5bH6Xvi2XNQlfYTJreE4WK3IgjljAcvPjhTDPqaqI6zIVAuL7BwqL373y4r70RinPI1b5s2W00O+YMzKPWIYqljipkl6loW0WsA0nd6wwEEknKiLNYApKUTJIC05EXa/CjATmpUuJuRxciJVhQgVrPZcQh3M7IY2SxFAYqHSdoAL4sRgMXDJG3QcAWASAbbC4RobwiQEsG+TmHqGwEMb9zRvZt3D0CTGLUgbPJsBNCUzrQgbPlpANBcECxPOivgDQCaS6oFoKehtQCkh/JqU2I5o355a73f7Va72WA/zu38xxeJshlfaGsrpjHobumsp/zPjVjEsTb2wM6g9elLDF5shqzzegBa1FcCGNqYeQFq+UsC6M2n7ncQ7U/2ZHvHuH3eyNPxNnMyCEoN5RgMsxdZYnSpC+EAeut5E4BSQzsFKG6GlgYIQkM7BRjpKZsBxMktFv4yiPtplMcsP6Nif/JkMgD4D88+XwPJgsbwAAAAAElFTkSuQmCC"/>
+                  </svg>
+                <h2 class="works__title">Recent works</h2>
+                <div class="works__gallery">
+                    <div class="works__slider slider">
+                        <div class="slider__btn btn_1"><span class="slider__btn-prev"></span></div>
+                        <div class="slider__wrap" id="lightgallery">
+                            <a class="slider__wrap-unit" href="assets/img/slide.jpg">
+                                <div class="slider__wrap-item item">
+                                    <div class="item__img">
+                                        <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/slide.jpg" alt="picture">
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="slider__wrap-unit" href="assets/img/slide.jpg">
+                                <div class="slider__wrap-item item">
+                                    <div class="item__img">
+                                        <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/slide.jpg" alt="picture">
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="slider__wrap-unit" href="assets/img/slide.jpg">
+                                <div class="slider__wrap-item item">
+                                    <div class="item__img">
+                                        <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/slide.jpg" alt="picture">
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="slider__wrap-unit" href="assets/img/slide.jpg">
+                                <div class="slider__wrap-item item">
+                                    <div class="item__img">
+                                        <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/slide.jpg" alt="picture">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slider__btn btn_2"><span class="slider__btn-next"></span></div>
+                    </div>
+                </div>
+                <div class="works__button">
+                    <a class="works__btn btn__link" href="javascript:void(0)" target="_blank">View gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+                <svg class="team__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+                    <image id="Icon-Team" width="60" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAE0klEQVRoge1b7W3iQBCdoCvAVHBOBYEKjlQQUkHgz/0NVHChArgKcCqAVBBfBZAKzqkg7iAnS2/Q08ofa2fHR6Q8yTIJ3vW+ndn52uXi591MesBERG5EZITPuYgccT2JSNrHIAp8M+4/FpEtSDIi/K+4FiA8F5HMeDwyMOy7kOaBJJqIyK2IXOK6xf8EzxzQxhRWEi4G/gxJHkHOlV7x915EViKyozbXaGMCKwlviex1g6pmRLJos7YiK0aEp5BWDiK5R5scWpDT2jaBBeE73BNPsoqM1vRd8+PdYEFYDc9jh7ZPuH8qCce4dzE86o/jhuc6w9ItnSUsCOu67eJTtU2btd8KFoRVLbusw6nTR3BYEFbDcw+/6osIbbiPT0E4gYuJWwYRa5Bm9xQcVkZrjvuMoq4qRHhm5rT9VIRTh/QBd3Y3sfOdoI1pqmiZHmqktaY0sQpZH2SlBz9cZENjEVlWkFFNGPdVBLAuAAikvMH13/EVaXVEkcC/G127cyQ89XjmLPoOvYYvAvf3Hri/rzV8TmgTh/dOWIt0ISsVmioGrWCGJmyBoLnxOUtY+zpLCb/gfhWoP+7rNWCfwQhzlSOEsYnI/+4D9HdCKMJHqHUUKFDQPo6h7UNIt/Qb918flHKEPrjPYAhJuGtpx4XmzyalnpCE85LSTluYl3pCR1puaefZ01VN+ir1WBQAtLSzpZ3AI6oaZTg4Bfh5aMvMsIql99jl1zVYtwuh3yVoY0ZWjJOHvOU6nFtusShCqnRMVxZgDU7IWh9DTUZXwiNcV3QUiVEMbvjBse1K/HkK8i907KkVfAnHdNaqKnzMSRJdNsNdLPG+CJMalRyHyDEJT1j7jVrQdDBthuMHrgRVzf7QTFe9TMs0VeWfpu8VEWnWD9zdjfM9yFcGLGWEIxwWc3f/jpBc2qBKeqBFY+CuhGM6CVT3rgmEwp4gR1i6cQXhEp5SaCcY9COFjWWY0oxP6IW6hrsSfqMJT0mjqtyW7lWxoDIsjVMbdktrGIqYXErhFx9KyOpe0RvaLIhsqBg4cQoLC7zrDe921TnDWIfk4mK0OcX2SniNDgVqcFkz6KLTv5hN3c/d4JzVEG2XAQgv0dcQfW8oBZ1hDA8VbROHw0JJFyo9QcwrmJk66TxQ6pbi2GCTv/WtLfvWtCcYg2rUqoa4OInM9YCOGaw8VFGfneOUnU9w4ZPAt/GnKd6tUVzTIbYE3ArcD6i64LO7p8agTdRzCenVXVWJhQ98ig3KbdI2ltaGOzqT0Te0wKBq2sZARgNSJ5+j8Ssy8Quy0u5xhtBQl7ODsVIDm3gaSH0+LYwWL+qx53pyDYciJ3+ZU1++iYT2p6HkD/rM8DWY4hituQYeO1rLyxa79THa3VgeCAU4ZvatZC7IBydMWI8O8Uk43xlkjCjGvUK/UYtjiBqT58iIso5ZkauBiVp1N7RcOGXWFDGpaRUiINxkJ4fgThrrWukN1jH/+ILDOcud/q6YUpi7daQ6dpdnXXoY04y5Fjh1UkPzn9/QmDhFLEtba5Md3x9qjUB8WuF+ciL+iru+sE15hte7loy+E9Eyv6+/jnn0Weu+FQ+V5JKqH1zeiXqw0gou86RttatLTass/VNpKGm10AXaToR6BrXUrD0fWzoi8g94Q2gtKVuEMwAAAABJRU5ErkJggg=="/>
+                  </svg>
+                <h2 class="team__title">Meet our team</h2>
+                <div class="team__slider slider">
+                    <div class="slide__btn btn_1"><span class="slide__btn-prev"></span></div>
+                    <ul class="slider__wrapper">
+                        <li class="slider__wrap-item item">
+                            <div class="item__img">
+                                <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/worker01.jpg" alt="picture">
+                            </div>
+                            <div class="item__content">
+                                <div class="item__name">Miguel Obrien</div>
+                                <div class="item__position">CEO & Founder</div>
+                            </div>
+                            <div class="item__social social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-linkedin2"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-instagram"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-facebook"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-twitter"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="slider__wrap-item item">
+                            <div class="item__img">
+                                <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/worker02.jpg" alt="picture">
+                            </div>
+                            <div class="item__content">
+                                <div class="item__name">Jackie Carroll</div>
+                                <div class="item__position">Art Director</div>
+                            </div>
+                            <div class="item__social social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-behance"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-linkedin2"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-instagram"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-facebook"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-twitter"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="slider__wrap-item item">
+                            <div class="item__img">
+                                <img class="item__image lazy" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==" data-src="assets/img/worker03.jpg" alt="picture">
+                            </div>
+                            <div class="item__content">
+                                <div class="item__name">Ida Morrison</div>
+                                <div class="item__position">Designer</div>
+                            </div>
+                            <div class="item__social social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-behance"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-linkedin2"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-instagram"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-facebook"></span></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-twitter"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="slide__btn btn_2"><span class="slide__btn-next"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact lazy" data-bg="assets/img/contact.jpg" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__top">
+                    <svg class="contact__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="60" viewBox="0 0 42 60">
+                        <image width="42" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA8CAYAAAAQTCjdAAADjUlEQVRogcVagZXaMAwVTJAR0gmaDS6d4LJB2eBug9IJMkLYgHYCrhNwN0HYADZwX6h0/Zgklhwn6D09jmDL37IsfTu3cs7RBCmIqCSir0SUE1HGzzp5J6ILEZ2I6IOI3vhZnHRAjZo752rn3NnZpeW+uXVci0c7j9VEVMGzC3vqD3jrjT9L/uw8/MTfM+i7I6Kf7PGwKGe09Xy3d85VEatRcV+UraZvqEG3REcweohZtgG7B7B7DNkdM1ZAHJ4jPajxMI5RWIEiyOBsE3j3GAKrAZnNCFI0C4Ed67AUSNXYfuMaZrUkSAwDWc16CGgBu3COjaPVCnAUfUAlXewfCFJUcu3BB1rCLGJ2eMlLhbnxwM/KyBC48ar80PDDJsIgghuSmEJxg0kenhG9Uv2C0BmsGFDOsdYA8NGE3qMF9CMM3jYSZKggqBL6gLbcr1wDf/xl4Ik1M6GOMX0LMKATt3nnPrVhnP9MDGJsY0wf1lyLOVK7wTayMdfAEXW8kOiZP3fMR7Vy4j6dfDf0oStGCHZr3FhiDdOYdT9cZXVF+E9Wylla20/tf22/jhxscVlDnOXKwaV9EWjXJ9JHG9uC6bKGQ5kWqH94s0jl2dBO7B2BPo90QPnNf794p8qQZNyHwEZIngQo5sVjxM63cIMmYsdLRauIk7aIljgg22oCiT/zar422SOD+iQlwv9UZ2yvaoiXuu+5N9AGvG+pfgR3CXsEuoEBrQkcgQxJG8FLxW7lPIZ/xh8MmvFE+3jpgX+znr+QT5APdAvGLUbnUJn0tg/oHf1/kOIh8zPmsYQiu3lR5rk5RMbe3TC6kZQw5zWOJiXdjO+TEvTqjwd4U8bc3fHjwKyWjNXe2OzbTKhSSZbMALLTe8uyJlZiLhCsGrwAGTMoF2YWshKrQj7qof5jhjOoVpYabVUp36On2pDRrcbIBEVnvI7Z0QzShpZlgkp4BcmQZhAM9JTpCtNRcMNqjd7dVyZQ032sdsBcG0tKfYXYV5Vqi/FUG0u9gWKBEuS7KdfnEkam/GwdZOoLid4XCXMAJS+lWEIAl9xyiIwGmkXm1iZygtFAycutGtJibZ8MqCUEsqG3cUsBxRAYywL7KUueAqi/pH1ZIHqXpwZKI4Vg0i6fAyhBIUAuILU8CfFOBbTwyiLW8iSMKxVQAnAoKQhMcqCd4r8KJX2dPvVf3nzprr9bfvjF+MJsWIjoLxsADPqOz6ccAAAAAElFTkSuQmCC"/>
+                      </svg>
+                    <h2 class="contact__title">Get in touch</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contact__info">
+            <svg class="contact__svg-pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="59" viewBox="0 0 56 59">
+                <image id="Pin" width="56" height="59" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA7CAYAAAAuEkmwAAAE9klEQVRogd2abawcUxjHf7O9dfmAKvc2xfXSpKk0bY1W8EHQ+FKJlyA0JFgvU3wi4YMKvlAS8VKREB104lNtNSSEJk3QNLQod1CKVpASCRIlLld7746c9Qzn7p3dnWd2Znfv/SeT3Z0958z5zXnOec7L40RRRF4K/LBRSX3AWcDpwGLgVOBYYDbQD/wO/Ab8CnwGfAx8CGwD/k5bvbLnJj64KDnA+cC1wMXAkU2ec4RcQ8AS4Cq5b8DfACrAq8BBbV1LBcCZl3Yd8DmwBbimBVwzGeiVwCbgG+A24DBNAXkDnivmFQCn5Fz2ccBa4AvgsrSZcjHRwA9nAg/LG3byKLOJTpAW3QisAvY3S9x2CwZ+OCimeHsH4GxdIQPRomaJ2gIM/HA+8L6YZjc0T0bas3MHDPzweOAt4MQuwcWaBbwm7meSMgEGfng48Lp0/F6QGaU3B344r74umRx94IeBuIKsMiPhVvn8RZy9cfwnA8uBkzKWu8OYa9lzx+Mb6lE08MOVGeHMm3wZeAAYbpH2HOA+mShoZGZLq+UZNalaMPBD42S/BQaVD94jDv89Zb4VwPPAXEUeM9tZXPbcL8nQBy/PAGegzswAZ7QZOAPYq8hjfPKD8Q8t4IXK9KZiF8kkOqu+By4AflbkvzTww4VkADxPkdasAi5RVqyR9sqcNG1/MhOOm9H0wcAPzSj3g6JSjwJ3KtKnUUVmMGlkXuxcTQuepkhbBZ7IFe1fPaZIO2BGVQ3gAkVaM6DsU6RPqx3SJ9NquQZwvrIiRUkzGi/VAA4p0hbRerG+U6RdoAHUzDsPKNJqpSl7TlGA2smARnMUaWelApQV+4Ci4KaL0DalKbuUtgVnK+tkVgSH5IIzUcYylirS708L2K+syFHAlco8aXQjMEOR/qcitg1jmeXOoTmWdwxwhzLPV0UCGr/5eE5lzZBl09HKfGGRgEa3AHflUM6TsirRamvRgMjabE3GPVizwH4OuDVDXnPWsa0TgGbpcrdM31akzFOS5ZE5zbkh43MrZc89UOThS72WyUGK2azdALwN7AZGpI8NWptOVwML23iWWQM+RcGnS420TK5Yo+Iz87SmTWXPrZ3ldQOwXnm6EqNxcVE1daIPdlqPlD1393QFfBO4174xnQC3m02usudOOAWeLoAvmV3wsuf+Uf/HVAcckwHFTOz/SkrQC6NoVu0Cbmq1RzMVW/BPmRkZX9pyA2oqtWBVghvuAX5Mm2kqAI7J1G6NnCeq1MuAI9Jia5WnSxPUa4DGDN+VEJEXWoWIpFEvAEbipCsS/6LZmm+pbgFGMrxXxEkXthPeSUAD9YEFpdmCz6xOAO4UqI1yvt9RFQX4kUBVJEqwa8oT8FPxVy8CX3cTyla7U7U9EpOyqOy5S2QHrWfgyNiC+8T0NpQ9d2cBdcpVfY4zKQLSsa7a74fuf2V8cGDo6dHRkcozz67e/smud4xD5vpVtZiURrKjGyLrM1q/bji/QPEWsukcMdk+2cYryeUkXDDx0wawoSKZndjfx2V+WV2/briaJ0xSULpjgfVLlFAjODIEvEYJV1WugxJLMxblGfpfp7gPOvJ9pgVHG2Cx7PwxREkAyRJF304F+izzTGrFUoJJ259RAxO1zTQ20dhMa6ZaYANOahnHAkvqf/V57O/1tUwyT9tE/+t/nQRMup9HoHkS/P8/igIE/gGnlzEl7OOd6QAAAABJRU5ErkJggg=="/>
+              </svg>
+            <div class="contact__action-wrap wrap1">
+                <div class="contact__box box1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="36" viewBox="0 0 38 36">
+                        <image id="Icon-Address" width="38" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAkCAYAAADl9UilAAAC7UlEQVRYhe2Xu2sVURCHv7xvXiYIFtrZ2Gkl2KhtQiBEkpBAIgmChagINv4D/gOSQMSQW2iSJgETC8HeJsFGBBtBFEUsfVzJw2vuT0ZmZbnubjZ7HzYZGLj3zJyZb2fPnjOnQRJVkG5gHigCN4BCpSGbqwDVCzwELvr/HmAa+AocA+4Ax4FSaE4DsAOsA09rAXbEoS4Al3xszccmgW1ADl/y33hlL7s9Egx7lRm1XdITSd8k9YVi9PnYuqScj7W4Nru2SXohaTYud1aoLkmPJX2XNBBhH3Cb+XRE2JskbUiaqSZYt6QVSV8k9Sf49bvPis8J26x6m9UEy3miQkyloipX8Dm5WoFZ4FVJPyQNHWDekM9ZLVtzryU9qBTM1slyBqhyuGWPZfvngqTblYDZUy564MEMUIEOeoxFj9nhX3YmMPuslyRtSRqpACrQEY9lMRuTfNNUygKNVgEq0FGPuVj2QaQCs0rlPcBwFaECHfbYec+VCqzVJ2xLGqsBVKBjniPvORPBmt1xV9JEDaECnfBcec8dCWbU85J2JI3XASrQcc85H65ceE3NOf1kHaECnfTcc8Gaww/k+5KKkqb/A1Sg085gLF02sOYDUyGn3piuoNraKaknFHPKWdYbgU/AVeCRt2htwKw3erWWKeAe0Op5jOEa8ME62JtlyQ32HPC5DmAngfPeSf/0sXwAESXb3v7WWizHVqjl/itZe34r/Sm/HSWJ3ZbehKqRWrKCnQCW/FUU/NYTFjn0O7+kvK8XmM07CtwFnvsHE5ZdvzndypojK5hV5BewAWzG+LQA16PWTxqJW/xppT3BL8m2r1QKVjM5BDuoHIIdVOLAbMPcS4hVTLkNaJ+jbS9ic/4jcftYyW1Nvh+VB8t5wCQ4uU/OYzSV2YueoxQ1OQ7MzrYrwNlQSxIGs+PGjqOkqprNfOzosmOrHMxynAY+pgWzJ5kBzvhRE1UVS/oMeJsAZjY7sjojoEysmi+BV/+8buA3icCykwDaThgAAAAASUVORK5CYII="/>
+                      </svg>
+                </div>
+                <a class="contact__action action__link" href="javascript:void(0)">
+                    <div class="contact__text text1">Ikan Piranha Atas 220C<br>Malang - East Java Indonesia
+                    </div>
+                </a>
+            </div>
+            <div class="contact__action-wrap wrap2">
+                <div class="contact__box box2">
+                    <svg class="contact__box-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="34" viewBox="0 0 20 34">
+                            <image width="20" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAiCAYAAABfqvm9AAABm0lEQVRIie3Wu2tUQRTH8c8m6yva2WlhEEVQREHQQvAfECyFBCx8FAFrSys7/wJFsRB7QfwDbAQRRLATxcKQQIqAYsT42pGzzIThcq9hs2K1By7Mnfub73kM3HN6KSW4hgXswnBjBJvCKu7hYR/XcRu38Ab9EYE/cQZ3MC2ltJhSWohIx3xupJTeRcpfcAIfKq/ncCl7b7NI8wFeVt8O43Wk9xvfG4c+4xt6LTWNvR9Ya+x/xa9SrzksN+rybJPaHcXJ6n3f0FtK6ROWsoepSrDZbfeq9QC7sb8Az+JtAziKBfAInpeU1yP/LcKKBWMjoukxYRuMrabYaRPgBDgBToD/F7j+D1hDRvljn8LeMYGzqia1lttmW00HuYHJjahLE2PMnhLhPN53iGdwNa/vZ8dtwEN4UoAfG325tph7LmRn0eBvdui2R8b9XMeZDlHYcSxm3bG/6OIOBlHDFznCix3Cg7ibo7uClRbNDjyOLAIYETzN88yrfLCeCprv26p11C6yO42dOF8GzphLLuNA43CxMpZ0fYsLfYTlP/R8oVKQbAG+AAAAAElFTkSuQmCC"/>
+                          </svg>
+                </div>
+                <a class="contact__action action__link" href="tel:+380631038808">
+                    <div class="contact__text text2">+380631038808
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contact__wrap">
+                <div class="contact__content">
+                    <div class="contact__form">
+                        <form class="form" id="my_form" name="contactform" action="#" method="get">
+                            <div class="contact__row">
+                                <div class="contact__name">
+                                    <input class="form__input" id="name" type="text" name="name" required="required" placeholder="Your Name *">
+                                </div>
+                                <div class="contact__mail">
+                                    <input class="form__input" id="email" type="email" name="email" required="required" placeholder="Your Email *">
+                                </div>
+                            </div>
+                            <div class="contact__message">
+                                <textarea class="form__input form__input--textarea" id="message" name="message" required="required" minlength="1" placeholder="Your Message *"></textarea>
+                            </div>
+                            <div class="contact__btn">
+                                <button class="btn" id="send" type="submit" name="contactform" value="send message">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="contact__button to_top" id="top" href="#home" title="Go to top"><span class="contact__button-top"></span></a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">© 2021 <b>tulus</b>driyo. All Rights Reserved.</div>
+                <div class="footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-behance"></span></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-linkedin2"></span></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-instagram"></span></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-facebook"></span></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0)" target="_blank"><span class="icon-twitter"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/plugins/lightgallery/dist/js/lightgallery-all.min.js"></script>
+    <script src="assets/plugins/lightslider/dist/js/lightslider.min.js"></script>
+    <script src="assets/js/vanilla-toast.min.js "></script>
+    <script src="assets/js/intersection-observer.min.js"></script>
+    <script src="assets/js/lazyload.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/js/onload.min.js"></script>
+</body>
+
+</html>
