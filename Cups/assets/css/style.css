@@ -1,0 +1,79 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fdde7e;
+}
+
+.wrapper {
+    display: flex;
+    width: 1140px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 361px;
+    height: 441px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #4e4e4e;
+    padding-top: 42px;
+    padding-bottom: 36px;
+    border: 1px solid #edd076;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px rgba(238, 211, 127, 0.8);
+}
+
+.gold {
+    height: 499px;
+    padding-top: 52px;
+    padding-bottom: 56px;
+}
+
+.price {
+    font-size: 60px;
+    font-family: 'Miso';
+    color: #02995b;
+}
+
+.icon {
+    display: flex;
+    width: 134px;
+    height: 135px;
+    background-image: url('../img/cups.png');
+    background-repeat: no-repeat;
+}
+
+.icon.icon_1 {
+    background-position: -1px 0px;
+}
+
+.icon.icon_2 {
+    background-position: -391px 0px;
+}
+
+.icon.icon_3 {
+    background-position: -779px 0px;
+}
+
+.title {
+    font-family: 'Miso';
+    font-weight: lighter;
+    font-size: 60px;
+    color: #000;
+}
+
+.text {
+    text-align: center;
+    font-size: 14px;
+}

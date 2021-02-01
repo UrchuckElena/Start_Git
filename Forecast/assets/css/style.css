@@ -1,0 +1,142 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3399cc;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 30px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 216px;
+    text-transform: capitalize;
+}
+
+h1 .wi {
+    font-size: 28px;
+}
+
+.container {
+    width: 1467px;
+    border: 25px solid #2b81ac;
+    background-color: #3399cc;
+}
+
+.content {
+    width: 984px;
+}
+
+.city {
+    list-style: none;
+    background-color: #fff;
+    margin-bottom: 26px;
+    padding: 4px;
+}
+
+ul.city li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 26px;
+    font-size: 26px;
+}
+
+#lisbon {
+    width: calc(50% - 7px);
+    height: 148px;
+    background-color: #3399cc;
+}
+
+#paris {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #33cccc;
+}
+
+#belgrade {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #996699;
+}
+
+#moscow {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #c24747;
+}
+
+#tel_aviv {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #e2674a;
+}
+
+#cair {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #ffcc66;
+}
+
+#new_york {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #99cc99;
+}
+
+#new_delhi {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #669999;
+}
+
+#san_francisco {
+    width: calc(50% - 7px);
+    height: 148px;
+    background-color: #cc6699;
+}
+
+#tokyo {
+    width: calc(25% - 7px);
+    height: 148px;
+    background-color: #339966;
+}
+
+#sydney {
+    width: calc(100% - 5px);
+    height: 148px;
+    background-color: #666699;
+}
+
+.wi {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.text_wish p {
+    font-size: 20px;
+    padding-left: 216px;
+    padding-bottom: 138px;
+    letter-spacing: 1px;
+}
+
+
+/* 
+ul:hover li {
+    opacity: 0.5;
+}
+
+.content ul li:hover {
+    opacity: 1;
+} */
+
+ul:hover li:not(:hover) {
+    opacity: 0.5;
+}

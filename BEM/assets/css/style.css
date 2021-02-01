@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('../img/background.png') repeat;
+    font-family: "MuseoSansCyrl-100";
+    text-align: center;
+    padding-top: 1%;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    width: 686px;
+    background-color: #111a28;
+    border-radius: 10px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main__content-logo {
+    position: absolute;
+    top: 24px;
+    left: 21px;
+}
+
+.main__content-images {
+    padding: 126px 77px 70px 36px;
+}
+
+.main__content-button {
+    display: flex;
+    align-items: center;
+}
+
+.button-item__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 19px;
+}
+
+.button-item__dot:active {
+    box-shadow: 0 0 0 2px #3a3d41;
+}
+
+.dot_1 {
+    background-color: #1f273f;
+}
+
+.dot_2 {
+    background-color: #fff;
+}
+
+.dot_3 {
+    background-color: #ed3333;
+}
+
+.dot_4 {
+    background-color: #29e3ea;
+}
+
+.main__info {
+    display: flex;
+    flex-direction: column;
+    color: #454c56;
+    text-align: start;
+    font-size: 14px;
+    padding-top: 70px;
+}
+
+.main__info-title {
+    padding-right: 86px;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.main__info-description {
+    padding-right: 75px;
+    padding-bottom: 20px;
+}
+
+.main__info-rating {
+    overflow: hidden;
+    padding-right: 177px;
+    padding-bottom: 18px;
+}
+
+.main__info-rating:not(:checked)>input {
+    display: none;
+}
+
+.main__info-rating:not(:checked)>label {
+    float: right;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #9da1a6;
+}
+
+.main__info-rating:not(:checked)>label:before {
+    content: '★';
+}
+
+.main__info-rating>input:checked~label {
+    color: #f7bf16;
+}
+
+.main__info-rating:not(:checked)>label:hover,
+.main__info-rating:not(:checked)>label:hover~label {
+    color: #f7bf16;
+}
+
+.main__info-rating>input:checked+label:hover,
+.main__info-rating>input:checked+label:hover~label,
+.main__info-rating>input:checked~label:hover,
+.main__info-rating>input:checked~label:hover~label,
+.main__info-rating>label:hover~input:checked~label {
+    color: #f7bf16;
+}
+
+.main__info-rating>label:active {
+    position: relative;
+}
+
+.main__info-box {
+    padding-right: 106px;
+    padding-bottom: 45px;
+}
+
+.box-menu__item {
+    width: 69px;
+    height: 32px;
+    background-color: #111a28;
+    color: #454c56;
+    border: 1px solid #4f5560;
+    font-size: 14px;
+    margin: -1px;
+    padding-left: 8px;
+    font-family: "MuseoSansCyrl-100";
+}
+
+.main__info-button {
+    padding-right: 60px;
+}
+
+.btn__link {
+    color: #454c56;
+    text-decoration: none;
+    border: 1px solid #4f5560;
+    padding: 15px 60px 15px 54px;
+}
+
+.btn__link:hover {
+    background-color: #202835;
+}

@@ -1,0 +1,10 @@
+/* font converted using font-converter.net. thank you! */
+
+@font-face {
+    font-family: "MuseoSansCyrl-100";
+    src: url("MuseoSansCyrl.woff") format("woff"), /* Modern Browsers */
+    url("MuseoSansCyrl.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
